@@ -1,4 +1,4 @@
-// Info.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// main.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include "info.h"
 
 int main() {
@@ -16,8 +16,13 @@ int main() {
 
 
 
-	Sleep(2000);
+	Sleep(1500);
 	sysinfo.ListRunningProcesses();
+
+	printf("\n********************* Active Tasks *************************\n");
+	sysinfo.ListActiveSchdTasks();
+	printf("************************************************************\n");
+
 
 	system("pause");
 	return 0;
